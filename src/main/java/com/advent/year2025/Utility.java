@@ -17,7 +17,7 @@ public class Utility {
 
         }
         BufferedReader br=new BufferedReader( new FileReader(testdir+"day"+day+".txt"));
-        List<String> list=new ArrayList<String>();
+        List<String> list=new ArrayList<>();
         String line;
         while((line=br.readLine())!= null){
             list.add(line);
