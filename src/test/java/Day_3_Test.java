@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import java.io.IOException;
 import java.math.BigInteger;
 
-public class Day_3_Test {@Test
+public class Day_3_Test {
 @Test
 public void dayThreePartATest() throws IOException {
     //result of what day 3 part a should b
