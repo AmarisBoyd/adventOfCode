@@ -52,7 +52,7 @@ public class Day_two {
         // big integer just in case the result is very big
         BigInteger result = BigInteger.ZERO;
         //read in the lines
-        List<String> lines = (Utility.readInput(test, day, partb));
+        List<String> lines = (Utility.readInput(day, partb));
         //in case there is more than one line read each one and add it to string ranges
         for (String line : lines) {
             stringRanges.addAll(List.of(line.split(",")));
@@ -102,7 +102,12 @@ public class Day_two {
 
 
 
-
+public static void part_a(boolean test) throws IOException {
+    calc(test, false);
+}
+public static void part_b(boolean test) throws IOException {
+        calc(test, true);
+}
 
 }
 

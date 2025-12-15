@@ -7,15 +7,15 @@ import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.Locale;
+
 
 public class Day_Three {
     /*Goal: find largest two integers in each array and combine them into a two digit integer add that to sum for result
      */
-    public static int part_a( boolean test, int day, boolean part_b)throws IOException{
+    public static int part_a(  boolean test)throws IOException{
     // get the arrays will probably be used in part B as well so break out into own function
         // find the largest int in the array stopping at array length -1 because it has to have at least one number after it
-        ArrayList<int[]> list = get_input(test, day, part_b);
+        ArrayList<int[]> list = get_input( test);
         int sum = 0;
         for(int [] number:list){
 
@@ -40,15 +40,15 @@ public class Day_Three {
             int FinalNumber = largest*10+secondLargest;
             sum+=FinalNumber;
 
-        }  System.out.println(sum);
+        }
         return sum;
     }
     //Similar idea but we want to make it so we find the largest 12 numbers
-    public static BigInteger part_b (boolean test, int day, boolean part_b)throws IOException{
-        ArrayList<int[]> numbers = get_input(test, day, part_b);
+    public static BigInteger part_b ( boolean test)throws IOException{
+        ArrayList<int[]> numbers = get_input( test);
         // Use big int to store sum because with the second part it always ends up being huge
         BigInteger sum = BigInteger.ZERO;
-        // Loop through all the interger arrays
+        // Loop through all the integer arrays
         for (int[] num : numbers) {
 
             // Same as before start an idex
@@ -75,11 +75,11 @@ public class Day_Three {
 
 
 
-    public static ArrayList<int []> get_input(boolean test,int day,boolean part_b) throws IOException {
+    public static ArrayList<int []> get_input(boolean test) throws IOException {
         //
         ArrayList<int []> list = new ArrayList<>();
         int[] tempArray;
-        List<String> lines = Utility.readInput(test, day, part_b);
+        List<String> lines = Utility.readInput(3, test);
         for (String line : lines) {
             //Init temp holding array to size of the string
             tempArray = new int[line.length()];

@@ -7,12 +7,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Utility {
-    public static List<String> readInput(boolean test, int day, boolean partb) throws IOException {
+    public static List<String> readInput(int day, boolean test) throws IOException {
         String testdir = "src/main/resources/";
         if (test) {
-            testdir += (partb) ? "test_b_" : "test_a_";
+            testdir +=  "test_";
         } else {
-            testdir += (partb) ? "input_b_" : "input_a_";
+            testdir +=  "input_";
 
         }
         testdir = testdir + "day" + day + ".txt";

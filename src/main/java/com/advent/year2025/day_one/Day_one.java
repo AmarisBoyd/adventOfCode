@@ -10,7 +10,7 @@ public class Day_one {
 
 
     public static void part_a(boolean test) throws IOException {
-        List<String> lines = Utility.readInput(test, 1, false);
+        List<String> lines = Utility.readInput(1, false);
         int dial = 50;
         int count = 0;
         for (String line : lines) {
@@ -33,7 +33,7 @@ public class Day_one {
     }
 
     public static void part_b(boolean test) throws IOException {
-        List<String> lines = Utility.readInput(test, 1, true);
+        List<String> lines = Utility.readInput(1, true);
         int dial = 50;
         int count = 0;
         for (String line : lines) {
