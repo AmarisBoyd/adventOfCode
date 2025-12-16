@@ -60,7 +60,7 @@ public class DayFour {
 
         boolean[][] map = buildMap(test);
         boolean[][] removable = Arrays.copyOf(map, width);
-        boolean hasMoved=false;
+        boolean hasMoved;
         do{
         for (int h = 0; h <height; h++) {
             for (int w = 0; w < width; w++) {
@@ -87,7 +87,7 @@ public class DayFour {
         }
 
 
-        }while(hasMoved==true);
+        }while(hasMoved);
 
 
         return count;
