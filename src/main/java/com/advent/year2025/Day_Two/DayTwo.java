@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class Day_two {
+public class DayTwo {
     public static void calc(boolean test, boolean partb) throws IOException {
         Long minimumRange;
         //int to store upper bound of the ranges

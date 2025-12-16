@@ -1,4 +1,4 @@
-package com.advent.year2025.day_one;
+package com.advent.year2025.Day_One;
 
 import com.advent.year2025.Utility;
 
@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.util.List;
 
 
-public class Day_one {
+public class DayOne {
 
 
     public static void part_a(boolean test) throws IOException {

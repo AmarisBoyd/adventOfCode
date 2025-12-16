@@ -9,7 +9,7 @@ import java.util.Arrays;
 import java.util.List;
 
 
-public class Day_Three {
+public class DayThree {
     /*Goal: find largest two integers in each array and combine them into a two digit integer add that to sum for result
      */
     public static int part_a(  boolean test)throws IOException{
@@ -58,7 +58,7 @@ public class Day_Three {
             // Start at the back of the array and loop through it until the numbers left equal 0
             for (int boundary = 11; boundary > -1; boundary--) {
                 //find the largest number and the index it is at this
-                List<Integer> res = Day_Three.findLargest(num, boundary, index);
+                List<Integer> res = DayThree.findLargest(num, boundary, index);
                 // set index to the index of the largest number so we don't look at it again
                 index = res.get(0);
                 //add the number to the string
