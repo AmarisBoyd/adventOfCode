@@ -1,8 +1,9 @@
 package com.advent.year2025;
 
-import com.advent.year2025.Day_Three.Day_Three;
-import com.advent.year2025.Day_Two.Day_two;
-import com.advent.year2025.day_one.Day_one;
+import com.advent.year2025.Day_Four.DayFour;
+import com.advent.year2025.Day_Three.DayThree;
+import com.advent.year2025.Day_Two.DayTwo;
+import com.advent.year2025.Day_One.DayOne;
 
 import java.io.IOException;
 
@@ -12,24 +13,31 @@ public class Main {
             //day_one();
           //  day_two();
             //day_three();
+        day_four();
     }
     public static void day_one() throws IOException {
-        Day_one.part_a(true);
-        Day_one.part_b(true);
-        Day_one.part_a(false);
-        Day_one.part_b(false);
+        DayOne.part_a(true);
+        DayOne.part_b(true);
+        DayOne.part_a(false);
+        DayOne.part_b(false);
     }
     public static void day_two() throws IOException {
-       Day_two.part_a(true);
-       Day_two.part_b(true);
-       Day_two.part_a(false);
-       Day_two.part_b(false);
+       DayTwo.part_a(true);
+       DayTwo.part_b(true);
+       DayTwo.part_a(false);
+       DayTwo.part_b(false);
 
     }
     public static void day_three() throws IOException {
-        System.out.println(Day_Three.part_a(true));
-        System.out.println(Day_Three.part_b(true));
-        System.out.println(Day_Three.part_a(false));
-        System.out.println(Day_Three.part_b(false));
+        System.out.println(DayThree.part_a(true));
+        System.out.println(DayThree.part_b(true));
+        System.out.println(DayThree.part_a(false));
+        System.out.println(DayThree.part_b(false));
+    }
+    public static void day_four() throws IOException {
+        System.out.println(DayFour.part_a(true));
+        System.out.println(DayFour.part_a(false));
+        System.out.println(DayFour.part_b(true));
+        System.out.println(DayFour.part_b(false));
     }
 }
